@@ -1,0 +1,24 @@
+Convert number to reversed array of digits
+
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+Example:
+
+348597 => [7,9,5,8,4,3]
+0 => [0]
+FUNDAMENTALSNUMBERSARRAYS
+
+Solution
+
+function digitize(n) {
+  let z = [];
+  if (n >0) 
+  {for (i = 1; n > 1; i++){
+    z.push(Math.floor(n % 10)); //делим число по модулю, получаем искомое число
+    n = n / 10; //получаем новое число с уменьшенное на один разряд
+  }
+  }
+   else {
+     z = [0];
+     }
+  return z;
